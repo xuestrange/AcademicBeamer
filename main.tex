@@ -1,0 +1,65 @@
+\documentclass{mybeamer}
+\title{ChatGPT Is A Killer}
+\author{Li Wu and M, Wu}
+\date{Hefei, China -- 10 December, 2023}
+
+\usepackage{nameref}
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname} % 获得当前最深层级的节标题
+\makeatother
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+	\frametitle{Contents}
+	\tableofcontents
+\end{frame}
+
+\section{Background}
+\subsection{Background One}
+\begin{frame}
+	\frametitle{\currentname}
+	\red{Hello World! +1}
+
+	\blue{Hello World! -1}
+
+	inline equations \(\alpha\), \(\sum_i x_i = y\)
+	\begin{equation*}
+		f(x) = \prod_{i=1}^I l_i\d G(\Theta)
+	\end{equation*}
+	\begin{itemize}
+		\item Nested items
+		      \begin{itemize}
+			      \item 1213
+		      \end{itemize}
+		\item item 2
+	\end{itemize}
+\end{frame}
+\section{Research Questions}
+\begin{frame}
+	\frametitle{\currentname}
+	\begin{enumerate}
+		\item Nested lists
+		      \begin{enumerate}
+			      \item Hello
+			      \item Good! 
+		      \end{enumerate}
+		\item Awesomw! 
+	\end{enumerate}
+
+\end{frame}
+\section{Heterogeneity Analysis}
+\begin{frame}
+	\frametitle{\currentname}
+	Long math equations autoline break
+	\begin{dmath*}
+		\log(1 + \mathrm{Questions}_{ikt}) = \alpha_k + \beta_1\mathrm{Treat}_i \times \mathrm{After}_t + \beta_2 \mathrm{New}_{k} \times \mathrm{Treat}_i \times \mathrm{After}_t + \beta_3\mathrm{New}_{k} \times \mathrm{Treat}_i + \beta_4\mathrm{New}_{k} \times \mathrm{After}_t
+	\end{dmath*}
+\end{frame}
+
+\begin{frame}[c]
+	\centering \HUGE Thanks! 
+\end{frame}
+\end{document}
