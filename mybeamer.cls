@@ -17,6 +17,7 @@
 
 
 \RequirePackage{breqn, amsmath,amssymb,amsthm,bm,fixdif}
+\RequirePackage{graphicx}
 
 \setbeamerfont{title}{size=\huge}
 \setbeamerfont{author}{size=\large}
@@ -40,3 +41,12 @@
 
 \newcommand{\red}[1]{\textcolor{RubineRed}{#1}}
 \newcommand{\blue}[1]{\textcolor{NavyBlue}{#1}}
+
+\RequirePackage{xparse}
+% color a piece of text, and repeat it several times.
+% example
+% \second[2]{Hello} % Hello will be normal in this slide and be colored in RubineRed in the next page 
+% \second[2-3]{Hello} % Hello will be normal in this slide and be colored in RubineRed in the next and the next next page 
+\NewDocumentCommand{\second}{o g}{%
+\IfNoValueTF{#1}{\textcolor{RubineRed}{#2}}%
+{\textcolor<#1>{RubineRed}{#2}}}
