@@ -50,3 +50,6 @@
 \NewDocumentCommand{\second}{o g}{%
 \IfNoValueTF{#1}{\textcolor{RubineRed}{#2}}%
 {\textcolor<#1>{RubineRed}{#2}}}
+
+% reference support
+\RequirePackage[style=apa, backend=biber, natbib=true]{biblatex}
